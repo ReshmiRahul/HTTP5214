@@ -23,11 +23,9 @@
         if(!$results) {
             echo 'Error Message: ' . mysqli_error($connect);
         } else echo 'The query found: ' . mysqli_num_rows($results);
-        $colors = mysqli_fetch_all($results, MYSQLI_ASSOC);
-       
-        foreach ($colors as $row) {
-            $name = $row['Name']; 
-            $hex = $row['Hex'];  
+        while ($row = mysqli_fetch_assoc($results)) {
+            $name = $row['Name'];
+            $hex = $row['Hex'];   
             echo "<div class='color-box' style='background-color: $hex;'>$name</div>";
         }
     ?>
