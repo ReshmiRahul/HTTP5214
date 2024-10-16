@@ -35,8 +35,20 @@
           <div class="card-body">
             <h5 class="card-title">' . $school['School Name'] . '</h5>
             <p class="card-text">' . $school['School Level'] . '</p>
-            <span class="badge bg-secondary">' . $school['Phone'] .'</span><br><br>
-            <a href="mailto:' . $school['Email'] . '" class="btn btn-primary">' . $school['Email'] . '</a>
+            <span class="badge bg-secondary">' . $school['Phone'] .'</span>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col">        
+                <form method="GET" action="updateSchool.php">
+                  <input type="hidden" name="schoolID" value="' . $school['id'] . '">
+                  <button class="btn btn-sm btn-primary">Update</button>
+                </form>
+              </div>
+              <div class="col">
+                <button class="btn btn-sm btn-danger">Delete</button>
+              </div>
+            </div>
           </div>
         </div>';
         }
