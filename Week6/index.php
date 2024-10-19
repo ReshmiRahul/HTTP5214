@@ -31,25 +31,28 @@
         //echo '<pre>' . print_r($schools) . '</pre>';
 
         foreach($schools as $school){
-          echo '<div class="card col-md-4 mb-2">
-          <div class="card-body">
-            <h5 class="card-title">' . $school['School Name'] . '</h5>
-            <p class="card-text">' . $school['School Level'] . '</p>
-            <span class="badge bg-secondary">' . $school['Phone'] .'</span>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col">        
-                <form method="GET" action="updateSchool.php">
-                  <input type="hidden" name="schoolID" value="' . $school['id'] . '">
-                  <button class="btn btn-sm btn-primary">Update</button>
-                </form>
-              </div>
-              <div class="col">
-                <button class="btn btn-sm btn-danger">Delete</button>
-              </div>
+            echo '<div class="card col-md-4 mb-2">
+            <div class="card-body">
+                <h5 class="card-title">' . $school['School Name'] . '</h5>
+                <p class="card-text">' . $school['School Level'] . '</p>
+                <span class="badge bg-secondary">' . $school['Phone'] .'</span>
             </div>
-          </div>
+            <div class="card-footer">
+                <div class="row">
+                <div class="col">        
+                    <form method="GET" action="updateSchool.php">
+                    <input type="hidden" name="schoolID" value="' . $school['id'] . '">
+                    <button class="btn btn-sm btn-primary">Update</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <form method="GET" action="deleteSchool.php">
+                    <input type="hidden" name="schoolID" value="' . $school['id'] . '">
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </div>
+                </div>
+            </div>
         </div>';
         }
 
