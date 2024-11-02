@@ -1,3 +1,8 @@
+<?php
+ include('inc/functions.php');
+ secure();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +23,8 @@
   </div>
   <?php 
         require('reusables/connect.php');
-        $schoolID = $_GET['schoolID'];
-        $query = "SELECT * FROM public_school_contact_list_may2024_en WHERE `id` = '$schoolID'";
+        $schoolID = $_GET['id'];
+        $query = "SELECT * FROM public_school_contact_list_may2024_en WHERE id = '$schoolID'";
         $school = mysqli_query($connect, $query);
 
         $result = $school -> fetch_assoc();
@@ -57,7 +62,9 @@
           <input type="text" class="form-control" id="phone" name="phone" value="<?php echo $result['Phone']; ?>">
         </div>
         
-        <button type="submit" class="btn btn-primary" name="addSchool">Submit</button>
+        <input type="hidden" name="id" value="<?php echo $result['id'] ?>">
+
+        <button type="submit" class="btn btn-primary" name="updateSchool">Submit</button>
 
       </form>
       </div>

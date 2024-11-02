@@ -1,6 +1,6 @@
-<?php 
-  include('inc/functions.php');
-  secure();
+<?php
+ include('inc/functions.php');
+ secure();
 ?>
 
 <!DOCTYPE html>
