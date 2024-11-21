@@ -1,3 +1,8 @@
+<?php
+ include('inc/functions.php');
+ secure();
+?>
+
 <?php 
 require('reusables/connect.php');
 
