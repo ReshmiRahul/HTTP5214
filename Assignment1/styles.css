@@ -2,3 +2,120 @@
     max-width: 250px; 
     margin: auto;    
 }
+
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background image */
+.login-container {
+    background-image: url('img/login.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for the forms */
+.container-fluid {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Form styles */
+.login-form-left, .login-form-right {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form {
+    color: #fff;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Make the layout responsive for small screens */
+@media (max-width: 768px) {
+    .login-form-left, .login-form-right {
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* Styling for BookNest Logo in the navbar */
+.navbar-brand.logo {
+    font-size: 30px; /* Adjust size of the logo */
+    font-weight: bold; /* Make the text bold */
+    color: #2c3e50; /* Dark color for text */
+    text-transform: uppercase; /* Capitalize the text */
+    letter-spacing: 2px; /* Add some spacing between letters */
+    font-family: 'Arial', sans-serif; /* Choose a clean font */
+    transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.navbar-brand.logo:hover {
+    color: #e74c3c; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #555555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e74c3c; /* Hover effect for links */
+}
+
+.navbar {
+    background-color: #f4f4f9; /* Light background for the navbar */
+    padding: 1rem; /* Add some padding */
+}
+
+.navbar-toggler-icon {
+    background-color: #e74c3c; /* Red color for the burger menu */
+}

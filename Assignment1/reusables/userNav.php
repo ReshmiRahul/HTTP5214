@@ -8,13 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="addBook.php">Add Book</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="viewUsers.php">View Users</a> 
+                    <a class="nav-link active" aria-current="page" href="userIndex.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>

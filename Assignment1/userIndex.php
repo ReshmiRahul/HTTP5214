@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <?php require('reusables/nav.php') ?>
+        <?php require('reusables/userNav.php') ?>
       </div>
     </div>
   </div>
@@ -46,9 +46,9 @@
               <div class="card-footer">
                 <div class="row">
                   <div class="col">
-                    <form method="GET" action="bookDetails.php">
+                    <form method="GET" action="addRating.php">
                       <input type="hidden" name="bookID" value="' . $book['Book-ID'] . '">
-                      <button class="btn btn-info">Details</button>
+                      <button class="btn btn-info">Add Rating</button>
                     </form>
                   </div>                               
                 </div>
