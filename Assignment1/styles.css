@@ -3,8 +3,6 @@
     margin: auto;    
 }
 
-/* styles.css */
-
 /* General Reset */
 * {
     margin: 0;
@@ -85,20 +83,20 @@ button[type="submit"]:hover {
         box-sizing: border-box;
     }
 }
-/* Styling for BookNest Logo in the navbar */
+
 .navbar-brand.logo {
-    font-size: 30px; /* Adjust size of the logo */
-    font-weight: bold; /* Make the text bold */
-    color: #2c3e50; /* Dark color for text */
-    text-transform: uppercase; /* Capitalize the text */
-    letter-spacing: 2px; /* Add some spacing between letters */
-    font-family: 'Arial', sans-serif; /* Choose a clean font */
-    transition: color 0.3s ease; /* Add a smooth transition effect */
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #2c3e50; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-family: 'Arial', sans-serif; 
+    transition: color 0.3s ease; 
 }
 
 .navbar-brand.logo:hover {
-    color: #e74c3c; /* Change color on hover */
-    text-decoration: none; /* Remove underline on hover */
+    color: #e74c3c; 
+    text-decoration: none; 
 }
 
 .navbar-nav .nav-link {
@@ -108,14 +106,14 @@ button[type="submit"]:hover {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #e74c3c; /* Hover effect for links */
+    color: #e74c3c; 
 }
 
 .navbar {
-    background-color: #f4f4f9; /* Light background for the navbar */
-    padding: 1rem; /* Add some padding */
+    background-color: #f4f4f9; 
+    padding: 1rem; 
 }
 
 .navbar-toggler-icon {
-    background-color: #e74c3c; /* Red color for the burger menu */
+    background-color: #e74c3c; 
 }

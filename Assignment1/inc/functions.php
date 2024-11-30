@@ -14,8 +14,8 @@
 
   function get_message(){
     if(isset($_SESSION['message'])){
-        // Ensure that the 'className' key is set, if not, set a default value.
-        $className = isset($_SESSION['className']) ? $_SESSION['className'] : 'info'; // Default to 'info' class if not set
+       
+        $className = isset($_SESSION['className']) ? $_SESSION['className'] : 'info'; 
 
         echo 
         '<div class="alert alert-' . $className . '">' . 
