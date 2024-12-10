@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col">
             <form action="{{ route('students.update', $student -> id) }}" method="POST">
-                @method("PUT");
+                @method("PUT")
                 {{ csrf_field() }}
                 <div class="mb-3">
                     <label for="fname" class="form-label">First Name</label>

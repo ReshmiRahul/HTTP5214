@@ -20,8 +20,11 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+                  <a class="nav-link" href="{{ route('students.index') }}">Students</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('courses.index') }}">Courses</a>
+                </li>
             </ul>
           </div>
         </div>
